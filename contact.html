@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<style>
+body {
+background-color: #ee82ee;
+margin: 0 10%;
+font-family: sans-serif;}
+form{
+border: 1px solid cyan;
+}
+input{
+border: 1px solid orange;
+}
+#design{color: white;
+        background-color: #00FF00;
+        width: 80vw;
+        height: 3vw;
+        padding: 5px;}
+#design1{color: white;
+        background-color: #C700F2;
+        width: 80vw;
+        height: 3vw;
+        padding: 5px;}
+#design:hover{color: blue;
+	background-color: pink;}
+#design1:hover{color: blue;
+	background-color: yellow;}
+#submit{font-size: 2rem;
+        color: blue;
+        background-color: white;
+        border: 1px solid yellow;}
+#submit:hover{font-size: 2rem;
+               color: red;}
+p{font-size: 2rem;
+  color: red;}
+p:hover{background-color: brown;}
+</style>
+</head>
+<body>
+<form>
+<h2>Fill in the following fields</h2>
+<form action="/submit_form" method="post">
+<label for="fisrt name">First Name</label>
+<input type="text" name="first name" id="First name" placeholder="Fisrt Name" />
+&nbsp &nbsp<label for="last name">Last Name</label>
+&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="last name" id="last name" placeholder="Last Name" />
+<br>
+<br>
+<label for="course">Course</label>
+&nbsp &nbsp &nbsp &nbsp<input type="text" name="course" id="course" placeholder="course" />
+&nbsp &nbsp<label for="confirm course">Confirm Course</label>
+<input type="text" name="confirm course" id="confirm course" placeholder="Confirm Course" />
+<br>
+<br>
+<label for="country">Country</label>
+&nbsp &nbsp &nbsp<input type="text" name="country" id="country" placeholder="Country" />
+
+&nbsp &nbsp<label for="country">Country Zip Code</label>
+ <input type="text" name="country zip code" id="country zip code" placeholder="Country Zip Code" />
+<br>
+<br>
+<label for="password">Password</label>
+&nbsp &nbsp<input type="password" name="password" id="password" placeholder="Password" />
+&nbsp &nbsp<label for="confirm password">Confirm Password</label>
+<input type="confirm password" name="confirm password" id="password" placeholder="Confirm Password" />
+<br>
+<input type="radio" name="tick" id="" value="tick">Tick
+<br>
+<br>
+<button type="submit">Submit</button>
+</form>
+<br>
+<br>
+<p>Let's play</p>
+<div id=design>Happy smile friends, do you like this color?</div>
+<input type="checkbox" name="tick" id="" value="tick">Tick yes if you like it
+<br>
+<input type="checkbox" name="tick" id="" value="tick">Tick no if you dont like it
+<br>
+<br>
+<div id=design1>Happy smile friends, do you like this color?</div>
+<input type="checkbox" name="tick" id="" value="tick">Tick yes if you like it
+<br>
+<input type="checkbox" name="tick" id="" value="tick">Tick no if you dont like it
+<br>
+<br>
+<form>
+<button id="submit" type="submit">Submit</button>
+</form>
+<br>
+<br>
+<a href="index.html">Back to homepage</a>
+<script>
+alert("Thank you.");
+</script>
+</body>
+</html>
